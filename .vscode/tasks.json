@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "",
+      "args": [
+        "g++",
+        "-std=c++17",
+        "-I./inc",
+        "$(find",
+        "src",
+        "-name",
+        "'*.cpp')",
+        "-o",
+        "./bin/program",
+        "-I./lib/sfml/2.5.1_1/include",
+        "-L./lib/sfml/2.5.1_1/lib",
+        "-lsfml-graphics",
+        "-lsfml-window",
+        "-lsfml-system"
+      ]
+    },
+    {
+      "label": "run",
+      "type": "shell",
+      "command": "./bin/program",
+      "problemMatcher": []
+    }
+  ]
+}
