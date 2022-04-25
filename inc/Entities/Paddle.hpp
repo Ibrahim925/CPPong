@@ -12,8 +12,13 @@ class Paddle : public Entity
 {
 private:
     PaddleType type;
+    int score;
+    sf::Font font;
+    sf::Text scoreText;
+    sf::RenderTarget *window;
 
 public:
-    Paddle(PaddleType);
-    void update(sf::RenderTarget *);
+    Paddle(PaddleType, sf::RenderTarget *);
+    void update();
+    void updateScore();
 };

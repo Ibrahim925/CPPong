@@ -7,11 +7,12 @@
 class Ball : public Entity
 {
 private:
+    sf::RenderTarget *window;
     int xDir;
     int yDir;
     std::vector<Paddle *> paddles;
 
 public:
-    Ball(std::vector<Paddle *>);
-    void update(sf::RenderTarget *);
+    Ball(std::vector<Paddle *>, sf::RenderTarget *);
+    void update();
 };
