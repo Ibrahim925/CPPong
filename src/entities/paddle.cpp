@@ -7,7 +7,7 @@
 
 Paddle::Paddle(PaddleType _type, sf::RenderTarget *_window) : Entity(sf::Vector2f(P_WIDTH, P_HEIGHT), sf::Vector2f(0, S_HEIGHT / 2), sf::Color::White), type(_type), score(0), window(_window)
 {
-    if (!this->font.loadFromFile("res/bit5x3.ttf"))
+    if (!this->font.loadFromFile("./res/bit5x3.ttf"))
     {
         std::cout << "Error while loading font\n";
     }
