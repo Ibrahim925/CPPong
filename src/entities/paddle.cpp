@@ -16,7 +16,7 @@ Paddle::Paddle(PaddleType _type, sf::RenderTarget *_window) : Entity(sf::Vector2
     this->scoreText.setString(std::to_string(this->score));
     this->scoreText.setCharacterSize(100);
 
-    switch (_type)
+    switch (this->type)
     {
     case PaddleType::left:
         this->pos.x = P_PADDING;
