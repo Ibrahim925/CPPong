@@ -1,5 +1,5 @@
 # CPPong
 
-A take on my Python version of Pong with C++ and SFML!
+Pong written in C++ with SFML
 
 To run, enter "./bin/program" in project directory.
